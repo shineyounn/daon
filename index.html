@@ -10,35 +10,49 @@
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/main.css">
 
+  <!-- 반응형 -->
+ <link rel="stylesheet" href="./css/ban_main_768.css">
+ <link rel="stylesheet" href="./css/ban_main_1020.css">
+ <link rel="stylesheet" href="./css/ban_common.css">
+ 
+
+
   
 
 </head>
 
 <body>
-<header>
-  <div class="header-inner">
-    <div class="logo">
-      <a href="#"><img src="./img/G.png" alt="로고" /></a>
-    </div>
-    <ul class="menu">
-      <li>센터 소개</li>
-      <li>주요 사업</li>
-      <li>신청하기</li>
-      <li>진료 과목</li>
-      <li>진료 안내</li>
-    </ul>
-  </div>
 
-    </header>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <a href="#"><img src="./img/G.png" alt="로고" /></a>
+      </div>
+  
+      <!-- 햄버거 버튼 추가 -->
+      <button id="menuToggle" class="hamburger" aria-label="메뉴 열기">
+        ☰
+      </button>
+  
+      <ul class="menu">
+        <li>센터 소개</li>
+        <li>주요 사업</li>
+        <li>신청하기</li>
+        <li>진료 과목</li>
+        <li>진료 안내</li>
+      </ul>
+    </div>
+  </header>
+
     <section id="section1">
       <div class="visual">
-
+        <img src="./img/low-rise-building.jpg" alt="hospital">
         <div class="text">
-          <h1>몸도 마음도, 다온숲에서 다시 피어나다</h1>
+          <h1>몸도 마음도, <br>다온숲에서 다시 피어나다</h1>
           <button class="btn">신청하러 가기</button>
         </div>
       </div>
-      <img src="./img/low-rise-building.jpg" alt="hospital">
+      
       <div class="container">
 
 
@@ -47,7 +61,7 @@
           <button class="slide-on" style="animation-delay: 0.2s;">여성건강</button>
           <button class="slide-in" style="animation-delay: 0.4s;">자기돌봄 프로그램</button>
           <button class="slide-on" style="animation-delay: 0.6s;">치유 공간</button>
-          <button class="slide-in" style="animation-delay: 0.8s;">몸-마음 치유 교실</button>
+          <button class="slide-in" style="animation-delay: 0.8s;">중식 제공</button>
         </div>
       </div>
     </section>
@@ -72,49 +86,35 @@
 
     <section id="section4">
       <div class="container">
-    
+        
         <!-- 1. 이미지 왼쪽, 텍스트 오른쪽 -->
         <div class="column">
           <img src="./img/cheerful-teenage-girl-smiling-face-portrait_53876-148053.avif" alt="1">
-          <div>
-            <h3>
-              몸과 마음의 회복을<br>
-              <strong>찾는 청소년들,</strong><br>
-              다온숲에서 다시 웃어요.
-            </h3>
-            <p>아팠던 마음, 닫혔던 감정이 다시 피어나 스스로 웃을 수 있는 힘을 되찾을 수 있게 해줍니다.</p>
+          <div class="text">
+            <h3>몸과 마음의 회복을<br><strong>찾는 청소년들,</strong><br>다온숲에서 다시 웃어요.</h3>
+            <p>아팠던 마음, 닫혔던 감정이 다시 피어나<br>스스로 웃을 수 있는 힘을 되찾을 수 있게 해줍니다.</p>
           </div>
         </div>
-    
-       <!-- 2. 텍스트 왼쪽, 이미지 오른쪽 -->
-<div class="column reverse smaller-image">
-  <img src="./img/cheerful-teenage-girl-smiling-face-portrait_53876-148053.avif" alt="2">
-  <div>
-    <h3>
-      다온숲의<br>
-      <strong>따뜻한 맞춤형 치유</strong>
-    </h3>
-    <p>다온숲은 청소년 각자의 몸과 마음 상태를 섬세하게 살펴, 맞춤형 상담과 치료를 제공합니다. 의료진과 심리전문가가 함께하는 통합 치유로, 회복과 변화의 시작을 함께합니다.</p>
-  </div>
-</div>
+      <!-- 1. 이미지 왼쪽, 텍스트 오른쪽 -->
+        <div class="column">
+          <div class="text right-align">
+            <h3>다온숲의<br><strong>따뜻한 맞춤형 치유</strong></h3>
+            <p>다온숲은 청소년 각자의 몸과 마음 상태를 섬세하게 살펴, 맞춤형 상담과 치료를 제공합니다. 의료진과 심리전문가가 함께하는 통합 치유로, 회복과 변화의 시작을 함께합니다.</p>
+          </div>
+          <img src="./img/cheerful-teenage-girl-smiling-face-portrait_53876-148053.avif" alt="2">
+        </div>
     
         <!-- 3. 이미지 왼쪽, 텍스트 오른쪽 -->
         <div class="column">
-          <img src="./img/abstract-blur-hospital-clinic-interior_1203-7890.jpg" alt="3">
-          <div>
-            <h3>
-              <strong>정확한 진단과 깊은 이해</strong>로<br>
-              청소년의 건강과 마음을<br>
-              함께 돌봅니다.
-            </h3>
+          <img src="./img/cheerful-teenage-girl-smiling-face-portrait_53876-148053.avif" alt="3">
+          <div class="text">
+            <h3><strong>정확한 진단과 깊은 이해</strong>로<br>청소년의 건강과 마음을<br>함께 돌봅니다.</h3>
             <p>다온숲은 최신 의료 장비와 정서 치유 기법을 함께 적용해 더 안전하고 편안한 치유 경험을 제공합니다. 건강은 물론, 마음까지 회복할 수 있도록 함께합니다.</p>
-           
           </div>
         </div>
     
       </div>
     </section>
-
 
 
     <div id="section5">
@@ -219,6 +219,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("menuToggle");
+    const menu = document.querySelector(".menu");
+
+    if (toggleButton && menu) {
+      toggleButton.addEventListener("click", () => {
+        menu.classList.toggle("active");
+
+        // 버튼 텍스트도 바꿔줌
+        if (menu.classList.contains("active")) {
+          toggleButton.textContent = "✕";
+        } else {
+          toggleButton.textContent = "☰";
+        }
+      });
+    }
+  });
+</script>
+   
 
 </body>
 

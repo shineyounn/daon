@@ -1,14 +1,12 @@
 header {
   width: 100%;
   height: 169px;
-  /* background-color:#442707; */
   color: #FF6B00;
   display: flex;
   align-items: center;
   padding: 0 80px;
 }
 
-/* 내부 wrapper */
 .header-inner {
   display: flex;
   align-items: center;
@@ -16,19 +14,14 @@ header {
   width: 100%;
 }
 
-/* 로고 크기 */
 .logo img {
   width: 100px;
   height: auto;
 }
 
-/* 메뉴 스타일 */
 .menu {
   display: flex;
   gap: 60px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
   color: #FF6B00;
 }
 
@@ -44,347 +37,311 @@ header {
   transform: scale(1.1);
 }
 
-/* 섹션1 */
-#section1{
-    width: 100%;
-    height: 1528px;
-        /* background-color: rgb(255, 170, 0);} */
-}
-#section1 img{width:100%;height:auto;  max-height: 1920px;}
 
-    .visual {
-        position: relative;
-      }
-      
-      .text {
-        position: absolute;
-        top: 280px;
-        left:50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: #3a1e00;
-      }
-      
-      .text h1 {
-        font-size: 48px;
-        margin-bottom: 50px;
-        font-weight: 600;
-      }
-      
-      .btn {
-        background-color: #FF6B00;
-        color: white;
-        padding: 14px 36px;
-        font-size: 18px;
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        box-shadow : 5px 5px 10px 0px rgb(89, 84, 75, 0.8)
-      }
-      
-      .btn:hover {
-        background-color: #e05a00;
-      }
-      
-      .button{
-        display: flex;
-        justify-content: center;
-        gap:110px;
-        flex-wrap: wrap;
-        margin-top: 60px;
-      }
-      
-      .slide-in {
-        background: linear-gradient(to right, #ff9900, #ff5f00);
-        color: white;
-        padding: 14px 60px;
-        border: none;
-        border-radius: 30px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        opacity: 0;
-        transform: translateX(100%);
-        animation: slideIn 0.6s ease-out forwards;
-        box-shadow : 5px 5px 10px 0px rgb(213, 209, 201) ;
-      }
-      
-      .slide-on {
-        background: linear-gradient(to left, #ff9900, #ff5f00);
-        color: white;
-        padding: 14px 40px;
-        border: none;
-        border-radius: 30px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        opacity: 0;
-        transform: translateX(100%);
-        animation: slideIn 0.6s ease-out forwards;
-        box-shadow : 5px 5px 10px 0px rgb(213, 209, 201) ;
-      }
-
-      @keyframes slideIn {
-        to {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-
-
-/* 섹션2 */
-#section2{
-    width: 100%;
-    height: 1166px;
-    background-color: #FFFCF0 ;
-    text-align: center;}
-
-   #section2 h2{font-size: 32px;
-  line-height: 60px;
-color:#3a1e00;} 
-
-  #section2 .container{padding-top: 125px;}
-    #section2 .card-grid {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 40px;
-    }
-    #section2 .card {
-      width: 338px;
-      height: 450px;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      margin-top: 64px;  box-shadow : 5px 5px 10px 0px rgb(203, 197, 187) ;
-    }
-  
-    #section2 .card:nth-child(1),#section2 .card:nth-child(3){margin-top: 188px;}
-
-    #section3 {
-      width: 100%;
-      height: 571px;
-      background-image: url('../img/empty-door-living-room-interior-background.jpg');/* 배경 이미지 경로 설정 */
-      background-attachment: fixed; /* 배경 고정 */
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-color: rgba(154, 103, 0, 0.8); /* 배경 컬러는 반투명으로 덮을 수도 있어요 */
-      color: white; /* 필요시 글자색 조정 */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-
-  /* 섹션4 전체 스타일 */
-#section4 {
+/* section1  */
+#section1 {
   width: 100%;
-  /* background-color: rgb(255, 170, 0); */
-  padding: 100px 0;
+  height: 1208px;
 }
 
-/* 컨테이너 내부 카드 전체 정렬 */
-#section4 .container {
-  display: flex;
-  flex-direction: row;flex-wrap: wrap;
-  gap: 100px;
-  align-items: center;
+#section1 img {
+  width: 100%;
+  height: auto;
+  max-height: 1920px;
 }
 
-/* 각 column(카드) */
-#section4 .column:nth-of-type(1),
-#section4 .column:nth-of-type(2){
-  width:calc(50% - 60px);
+#section1 .visual {
+  position: relative;
+}
+
+#section1 .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #3a1e00;
+}
+
+.text h1 {
+  font-size: 48px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: #FF6B00;
+  color: white;
+  padding: 14px 36px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 5px 5px 10px 0px rgba(89, 84, 75, 0.8);
+}
+
+.btn:hover {
+  background-color: #e05a00;
+}
+
+.button {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 110px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.slide-in,
+.slide-on {
+  color: white;
+  padding: 14px 60px;
+  border: none;
+  border-radius: 30px;
+  /* font-size: 16px; */
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideIn 0.6s ease-out forwards;
+  box-shadow: 5px 5px 10px 0px rgb(213, 209, 201);
+}
+
+.slide-in {
+  background: linear-gradient(to right, #ff9900, #ff5f00);
+}
+
+.slide-on {
+  background: linear-gradient(to left, #ff9900, #ff5f00);
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/*section2*/
+#section2 {
+  width: 100%;
+  height: 1166px;
+  background-color: #FFFCF0;
+  text-align: center;
+}
+
+#section2 h2 {
+  font-size: 32px;
+  line-height: 60px;
+  color: #3a1e00;
+}
+
+#section2 .container {
+  padding-top: 125px;
+}
+
+.card-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.card {
+  width: 338px;
+  height: 450px;
+  background: #fff;
+  border-radius: 16px;
+  margin-top: 64px;
+  box-shadow: 5px 5px 10px 0px rgb(203, 197, 187);
+}
+
+.card:nth-child(1),
+.card:nth-child(3) {
+  margin-top: 188px;
+}
+
+
+/*section3*/
+#section3 {
+  width: 100%;
+  height: 571px;
+  background-image: url('../img/empty-door-living-room-interior-background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(154, 103, 0, 0.8);
+  color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
 }
 
-#section4 .column:nth-of-type(2){padding-top: 300px;}
+/*section*/
+#section4 {
+  padding: 60px 20px;
+  background-color: #fffaf5;
 
-#section4 .column:nth-of-type(3) {
+}
+
+#section4 .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#section4 .column {
   display: flex;
   flex-direction: row;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1400px;
-  /* gap: 60px; */
-  margin-top: -40px;  
-   max-width: 1350px;
+  gap: 40px;
+  margin-bottom: 60px;
 }
-/* 이미지 공통 스타일 */
+
+#section4 .column .text {
+  flex: 1;
+  padding: 0 20px;
+}
+
 #section4 .column img {
-  width: 100%;
-  height: 906px;
-  border-radius: 30px;
-  object-fit: cover;
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
 }
 
-/* ✅ 두 번째 column 이미지 크기만 줄이기 */
-#section4 .column.smaller-image img {
-  width: 100%;   /* 줄이고 싶은 크기로 설정 */
-  height: auto;   /* 비율 유지 */
+#section4 .column .text h3 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #bbb;
 }
 
-/* 3번째 column 안의 이미지만 따로 스타일 지정 */
-#section4 .column:nth-of-type(3) img {
-  width: 50%; /* 너비 줄이기 */
-  height: 906px; /* 비율 유지 */
-}
-
-
-/* 텍스트가 오른쪽에 있는 경우 */
-#section4 .column.reverse {
-  flex-direction: column-reverse;
-  
-}
-
-/* 텍스트 스타일 */
-#section4 h3 {
-  font-size: 48px;
-  color: #999999;
-  line-height: 70px;
-  margin-bottom: 20px;
-}
-
-/* 3번째 column 안의 h3만 스타일 다르게 지정 */
-#section4 .column:nth-of-type(3) h3 {
-  font-size: 48px;
-  color: #999999;
-  line-height: 70px;
-  margin-bottom: 20px;
-}
-
-#section4 strong {
+#section4 .column .text strong {
   color: #FF6B00;
 }
 
-#section4 p {
-  font-size: 24px;
-  line-height: 40px;
-  color: #3a1e00;
-  max-width: 600px;
+#section4 .column .text p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
 }
 
-    
-
-       /* 섹션5 */
-       #section5 {
-        width: 100%;
-        height: 1472px;
-        background-color: rgb(255, 250, 240);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-  
-      #section5 h3{ 
-          color: #FF6B00;
-          font-size: 48px;
-          margin-bottom: 24px;
-          
-      }
-  
-      #section5 p{
-          text-align: center;
-          padding-bottom: 104px; 
-          font-size: 24px;
-          line-height:48px;
-          color: #3a1e00;
-      }
-  
-      .swiper {
-        width: 1400px;
-        padding-bottom: 50px;
-      }
-  
-      .swiper-slide {
-        width: 670px !important;
-        height: 400px;
-        background: #fff;
-        border-radius: 20px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 100px;
-        box-sizing: border-box;
-        text-align: left;
-      }
-  
-      .slide-img {
-        width: 80px;
-        height: 80px;
-        background: #ccc;
-        border-radius: 10px;
-        margin-bottom: 20px;
-      }
-  
-      .slide-title {color:#3a1e00;
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-  
-      .slide-desc {color:#442707;
-        font-size: 14px;
-        color: #555;
-        margin-bottom: 20px;
-      }
-  
-      .slide-link {
-        color: #f60;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-flex;
-        align-items: center;
-        border-bottom: 1px solid #f60;
-        padding-bottom: 2px;
-      }
-  
-      .swiper-scrollbar {
-        background: #eee;
-      }
-  
-      .swiper-scrollbar-drag {
-        background: #f60;
-      }
-
-    /* 섹션6 */
-#section6 {
+/*section5*/
+#section5 {
   width: 100%;
-  height: 911px;
-  background-color: rgb(255, 170, 0);
-  background-image: url('../img/abstract-blur-hospital-clinic-interior_1203-7890.jpg');
-  background-position: center;
-  background-size: cover;
-  position: relative;
+  height: 1472px;
+  background-color: rgb(255, 250, 240);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 40px 20px;
+  /* 기존보다 줄임 */
+  margin: 0 auto;
+  text-align: center;
+}
+
+#section5 h3 {
+  color: #FF6B00;
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+#section5 p {
+  text-align: center;
+  padding-bottom: 104px;
+  font-size: 24px;
+  line-height: 48px;
+  color: #3a1e00;
+}
+
+.swiper {
+  width: 1400px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  width: 670px !important;
+  height: 400px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.slide-img {
+  width: 80px;
+  height: 80px;
+  background: #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.slide-title {
+  color: #3a1e00;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.slide-desc {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.slide-link {
+  color: #f60;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 1px solid #f60;
+  padding-bottom: 2px;
+}
+
+.swiper-scrollbar {
+  background: #eee;
+}
+
+.swiper-scrollbar-drag {
+  background: #f60;
+}
+
+
+/*section6*/
+#section6 {
+  width: 100%;
+  height: 911px;
+  background-image: url('../img/abstract-blur-hospital-clinic-interior_1203-7890.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   overflow: hidden;
 }
 
-/* 가상요소로 어두운 배경 레이어 */
 #section6::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* 어둡게 */
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
-/* 텍스트 스타일 */
 #section6 h3 {
   font-size: 32px;
   text-align: center;
@@ -394,30 +351,19 @@ color:#3a1e00;}
   margin-bottom: 30px;
 }
 
-/* 버튼 스타일 */
 #section6 .btn {
-  background-color: #FF6B00;
-  color: white;
-  padding: 14px 36px;
-  font-size: 18px;
-  border: none;
   border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 5px 5px 10px 0px rgb(114, 110, 104);
   z-index: 2;
   margin-top: 24px;
+  font-size: 16px;
 }
 
-#section6 .btn:hover {
-  background-color: #e05a00;
-}
 
+/*section7*/
 #section7 {
-  background-color:#1c0f01;
+  background-color: #1c0f01;
   color: #fff;
   padding: 60px 20px 0;
-  font-family: 'Pretendard', sans-serif;
 }
 
 #section7 .container {
@@ -428,7 +374,8 @@ color:#3a1e00;}
   justify-content: space-between;
 }
 
-.info-box, .form-box {
+.info-box,
+.form-box {
   flex: 1;
   min-width: 320px;
   margin: 20px;
@@ -464,7 +411,6 @@ color:#3a1e00;}
 .kakao {
   margin-top: 20px;
   font-size: 14px;
-  color: #fff;
   border-top: 1px solid #777;
   padding-top: 10px;
 }
@@ -524,4 +470,24 @@ color:#3a1e00;}
   font-size: 14px;
   line-height: 1.6;
   margin-top: 40px;
+}
+
+.form-box form label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.form-box input,
+.form-box textarea {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.form-box input::placeholder,
+.form-box textarea::placeholder {
+  color: #bbb;
 }
