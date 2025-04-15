@@ -1,0 +1,179 @@
+
+
+/* --------------------------------------
+   반응형 웹: 태블릿 (최대 1024px)
+---------------------------------------- *
+/*  */
+
+@media screen and (max-width: 1153px) {
+
+  header {
+    height: auto;
+    padding: 20px 40px;
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+/* 섹션1 */
+  .text h1 {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: row; /* ✅ 가로배치 유지 */
+    flex-wrap: wrap;     /* ✅ 줄바꿈 허용 */
+    justify-content: center;
+    gap: 16px;
+  }
+
+
+.slide-in,
+  .slide-on {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .slide-in,
+  .slide-on {
+    width: 30%;
+    padding: 12px 0;
+    text-align: center;
+  }
+
+  /* 섹션1 */
+  #section1 .text h1 {
+    font-size: 24px;
+    /* margin-bottom: 230px; */
+    font-weight: 600;
+    /* mix-blend-mode:hue; */
+
+  }
+
+
+  .btn:hover {
+    background-color: #e05a00;
+  }
+
+
+
+  #section1 {
+    width: 100%;
+    height: auto;
+    padding-bottom: 70px;
+    /* 하단 살짝 여백 */
+  }
+
+/*section2*/
+#section2 {
+  width: 100%;
+  height: auto;
+  background-color: #FFFCF0;
+  text-align: center;
+}
+
+#section2 h2 {
+  font-size: 32px;
+  line-height: 60px;
+  color: #3a1e00;
+}
+
+#section2 .container {
+  padding-top: 125px;
+}
+
+.card-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  padding-bottom: 140px;
+}
+
+.card {
+  width: 25%;
+  height: 300px;
+  background: #fff;
+  border-radius: 16px;
+  margin-top: 40px;
+  box-shadow: 5px 5px 10px 0px rgb(203, 197, 187);
+}
+
+.card:nth-child(1),
+.card:nth-child(3) {
+  margin-top: 188px;
+}
+
+  #section4 .column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  #section4 .text,
+  #section4 .column img {
+    width: 100%;
+  }
+
+  /* 섹션5 */
+  #section5 {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 250, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  #section5 .swiper {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .swiper-slide {
+    width: 90%;
+    padding: 60px 40px;
+  }
+
+  .swiper-slide {
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    margin-bottom: 40px;
+    /* 반응형에서 아래 카드와 간격 확보 */
+  }
+
+
+  #section6 h3 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  #section7 .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box,
+  .form-box {
+    margin: 10px 0;
+    width: 100%;
+  }
+}

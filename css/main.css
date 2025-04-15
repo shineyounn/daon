@@ -177,6 +177,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size:24px;
 }
 
 /*section*/
@@ -490,4 +491,33 @@ header {
 .form-box input::placeholder,
 .form-box textarea::placeholder {
   color: #bbb;
+}
+
+
+/* 방지 */
+/* 가로 스크롤 방지 설정 */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;         /* 너무 넓었던 간격 줄이기 */
+  padding: 0 20px;   /* 좌우 여백 확보 */
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.slide-in, .slide-on {
+  padding: 14px 30px;     /* padding 줄여서 너무 넓지 않게 */
+  max-width: 100%;
+  white-space: nowrap;    /* 줄바꿈 방지 */
+}
+
+.swiper-container {
+  max-width: 100%;
+  overflow: hidden;
 }
