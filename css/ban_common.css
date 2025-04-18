@@ -76,6 +76,10 @@ button:focus {
     }
 }
 
+@media (max-width: 1056px) {
+  .search-box{margin-top: 20px; z-index: 555;}
+}
+
 @media (max-width: 992px) {
     .menu li {
         padding: 12px 24px;
@@ -132,6 +136,122 @@ button:focus {
     }
 }
 
+@media (max-width: 768px) {
+
+  /* gnb 사이드 메뉴 */
+  .gnb {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .gnb.active {
+    right: 0;  display: flex; width: 250px;
+  }
+
+  .gnb > li {
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+  }
+  .gnb>li {float:left; width:100%; line-height:40px; text-align:center; 
+    z-index: 5; position:relative;}
+
+  .gnb > li > a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .sub {
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  /* 모바일 토글 버튼 */
+  .mobile-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+    color: #333;
+  }
+
+
+/* 기본 햄버거 숨김 */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #FF6B00;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* 모바일 메뉴 위치 조정 */
+.hamburger {
+  display: block;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  padding: 20px 0;
+
+  position: fixed;
+  top: 169px;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+
+.header-inner {
+  position: relative;
+}
+
+
+.text h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+
+.btn {
+  padding: 10px 24px;
+  font-size: 16px;
+}
+
+.slide-in,
+.slide-on {
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.button {
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+}
+
 @media (max-width: 480px) {
     .logo img {
         width: 80px;
@@ -165,3 +285,243 @@ button:focus {
         font-size: 14px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .logo img {
+      width: 80px;
+    }
+  
+    /* 기본 햄버거 숨김 */
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: #FF6B00;
+      cursor: pointer;
+      margin-left: auto;
+    }
+  
+    /* 모바일 메뉴 위치 조정 */
+    .hamburger {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+      background-color: white;
+      padding: 20px 0;
+  
+      position: fixed;
+      top: 169px;
+      left: 0;
+      width: 100vw;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+  
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .header-inner {
+      position: relative;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      display: none;
+      /* 임시로 숨김 */
+    }
+  
+    .menu li {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .text h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+  
+  
+    .btn {
+      padding: 10px 24px;
+      font-size: 16px;
+    }
+  
+    .slide-in,
+    .slide-on {
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+  
+    .button {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .slide-in,
+    .slide-on {
+      width: 80%;
+      padding: 12px 0;
+    }}
+
+    @media screen and (max-width: 992px) {
+        .logo img {
+          width: 80px;
+        }
+      
+        /* 기본 햄버거 숨김 */
+        .hamburger {
+          display: none;
+          font-size: 28px;
+          background: none;
+          border: none;
+          color: #FF6B00;
+          cursor: pointer;
+          margin-left: auto;
+        }
+      
+        /* 모바일 메뉴 위치 조정 */
+        .hamburger {
+          display: block;
+        }
+      
+        .menu {
+          display: none;
+          flex-direction: column;
+          gap: 15px;
+          background-color: white;
+          padding: 20px 0;
+      
+          position: fixed;
+          top: 169px;
+          left: 0;
+          width: 100vw;
+          z-index: 1000;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          text-align: center;
+        }
+      
+      
+        .menu.active {
+          display: flex;
+        }
+      
+        .header-inner {
+          position: relative;
+        }
+      
+        .menu {
+          flex-direction: column;
+          align-items: center;
+          display: none;
+          /* 임시로 숨김 */
+        }
+      
+        .menu li {
+          padding: 8px 16px;
+          font-size: 14px;
+        }
+      
+        .text h1 {
+          font-size: 28px;
+          margin-bottom: 30px;
+        }
+      
+      
+        .btn {
+          padding: 10px 24px;
+          font-size: 16px;
+        }
+      
+        .slide-in,
+        .slide-on {
+          padding: 12px 20px;
+          font-size: 14px;
+        }
+      
+        .button {
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+        }
+      
+        .slide-in,
+        .slide-on {
+          width: 80%;
+          padding: 12px 0;
+        }}
+
+        @media screen and (max-width: 1153px) {
+
+            header {
+              height: auto;
+              padding: 20px 40px;
+              flex-direction: column;
+            }
+          
+            .menu {
+              flex-wrap: wrap;
+              gap: 20px;
+              justify-content: center;
+            }
+          /* 섹션1 */
+            .text h1 {
+              font-size: 36px;
+              line-height: 1.4;
+            }
+          
+            .button {
+              display: flex;
+              flex-direction: row; /* ✅ 가로배치 유지 */
+              flex-wrap: wrap;     /* ✅ 줄바꿈 허용 */
+              justify-content: center;
+              gap: 16px;
+            }
+          
+          
+          .slide-in,
+            .slide-on {
+              padding: 12px 20px;
+              font-size: 14px;
+            }
+          
+            .slide-in,
+            .slide-on {
+              width: 30%;
+              padding: 12px 0;
+              text-align: center;
+            }
+          
+            /* 섹션1 */
+            #section1 .text h1 {
+              font-size: 24px;
+              /* margin-bottom: 230px; */
+              font-weight: 600;
+              /* mix-blend-mode:hue; */
+          
+            }
+          
+          
+            .btn:hover {
+              background-color: #e05a00;
+            }
+          
+          
+          
+            #section1 {
+              width: 100%;
+              height: auto;
+              padding-bottom: 70px;
+              /* 하단 살짝 여백 */
+            }
+        }          

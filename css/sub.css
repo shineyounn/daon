@@ -1,0 +1,351 @@
+@charset "utf-8";
+/* 헤더 */
+/* 기본 스타일 */
+/* 기본 */
+.main-header {
+    font-family: 'Noto Sans KR', sans-serif;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF6B00;
+    text-decoration: none;
+  }
+  
+  .gnb {width:600px; height:40px; }
+
+  .gnb>li {float:left; width:20%; line-height:40px; text-align:center;
+  z-index: 5; position:relative;}
+
+  .mgnb>li:hover {background-color:#000000;}
+
+  .mgnb>li:hover a {color:#333;}
+
+  .gnb>li>a {color:#000000;}
+
+  .sub {background-color:#ddd; display:none;}
+
+  .sub>li:hover {background-color:gold;}
+
+  /* ////========================== */
+  .search-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .search-box button {
+    padding: 8px 12px;
+    background: #FF6B00;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .mobile-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+/* section1  */
+#section1 {
+    width: 100%;
+    height: 750px;
+    display: flex;
+}
+
+#section1 h3{font-size:42px;margin-top:90px;text-align: center;}
+
+#section1 .container img {
+    width: 100%;
+    height: 536px;
+    display: block;
+    margin-top: 90px;
+}
+
+/* section2  */
+#section2 {
+    width: 100%;
+    height: 473px;
+    /* background-color: #FF6B00; */
+}
+
+#section2 .title h2 {font-size: 36px;margin-top: 132px;}
+
+#section2 .writing h3 {font-size: 32px; margin-top: 132px;}
+#section2 .writing p {font-size: 24px; margin-top: 40px;}
+
+
+#section2 .container {
+    display: flex;
+}
+
+#section2 .title {
+    width: 345px;
+    height: auto;
+    /* background-color: #777; */
+}
+
+#section2 .writing {
+    width: 1048px;
+    height: auto;
+    /* background-color: #c66f6f; */
+}
+
+
+
+
+/* section3  */
+#section3 {
+    width: 100%;
+    height: 636px;
+    /* background-color: antiquewhite; */
+}
+
+#section3 .container {
+    display: flex; justify-content: flex-end;}
+
+#section3 .content{width:80%;   display: flex; justify-content: flex-end;}
+
+#section3 .highlight{   width: 413px;
+    height: 522px;}
+
+#section3 .highlight img {
+    width: 413px;;
+    height: 522px;
+}
+
+#section3 .writing{width:532px; margin-left: 107px;}
+
+#section3 h3{font-size: 32px;margin-top:115px;}
+#section3 p{font-size: 24px; margin-top: 40px;}
+
+/* section4  */
+#section4 {
+    width: 100%;
+    height: 636px;
+    /* background-color: antiquewhite; */
+}
+
+#section4 .container {
+    display: flex; justify-content: flex-end;}
+
+
+#section4 .content {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+    
+#section4 .writing{width:460px;margin-right: 66px;}
+
+#section4 .highlight{   width: 522px;
+    height: 522px; }
+
+#section4 .highlight img {
+    width: 522px;
+    height: 522px;
+}
+
+#section4 h3{font-size: 32px;margin-top:115px;}
+#section4 p{font-size: 24px; margin-top: 40px;}
+
+
+
+
+/* section5  */
+#section5 {
+    width: 100%;
+    height: 516px;
+    /* background-color: antiquewhite; */
+}
+
+
+#section5 .container img {
+    width: 100%;
+    height: 516px;
+    display: block;
+}
+
+
+
+/* section6  */
+#section6 {
+    width: 100%;
+    height: 440px;
+    /* background-color: #FF6B00; */
+    display: flex;
+}
+
+#section6 .title h2 {font-size: 36px; margin-top: 132px;}
+
+#section6 .writing h3 {font-size: 32px; margin-top: 132px;}
+#section6 .writing p {font-size: 24px; margin-top: 40px;}
+
+/* #section6 .container {
+    display: flex; justify-content: flex-end;} */
+
+#section6 .title {
+    width: 344px;
+    height: auto;
+    /* background-color: #777; */
+}
+
+#section6 .writing {
+    width: 1048px;
+    height: auto;
+    /* background-color: #c66f6f; */
+}
+
+
+
+
+/* 섹션7 */
+/*section7*/
+#section7 {
+    background-color: #1c0f01;
+    color: #fff;
+    padding: 60px 20px 0;
+}
+
+#section7 .container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-box,
+.form-box {
+    flex: 1;
+    min-width: 320px;
+    margin: 20px;
+}
+
+.info-box h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.phone {
+    font-size: 32px;
+    color: #FF6B00;
+    margin-bottom: 20px;
+}
+
+.info-box h4 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.hours li {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.note {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.kakao {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #777;
+    padding-top: 10px;
+}
+
+.form-box h4 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box input,
+.form-box textarea {
+    background: transparent;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.form-box textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.checkbox input {
+    margin-right: 8px;
+}
+
+.form-box button {
+    background-color: transparent;
+    color: #FF6B00;
+    border: 1px solid #FF6B00;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-box button:hover {
+    background-color: #FF6B00;
+    color: #fff;
+}
+
+.footer-info {
+    background-color: #f5f5f5;
+    color: #442707;
+    padding: 20px 40px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 40px;
+}
+
+.form-box form label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.form-box input,
+.form-box textarea {
+    background: transparent;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.form-box input::placeholder,
+.form-box textarea::placeholder {
+    color: #bbb;
+}

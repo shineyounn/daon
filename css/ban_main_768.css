@@ -5,89 +5,9 @@
 @media screen and (max-width: 768px) {
   .logo img {
     width: 80px;
-  }
-
-  /* 기본 햄버거 숨김 */
-  .hamburger {
-    display: none;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: #FF6B00;
-    cursor: pointer;
-    margin-left: auto;
-  }
-
-  /* 모바일 메뉴 위치 조정 */
-  .hamburger {
-    display: block;
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-    background-color: white;
-    padding: 20px 0;
-
-    position: fixed;
-    top: 169px;
-    left: 0;
-    width: 100vw;
-    z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    text-align: center;
-  }
-
-
-  .menu.active {
-    display: flex;
-  }
-
-  .header-inner {
-    position: relative;
-  }
-
-  .menu {
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    /* 임시로 숨김 */
-  }
-
-  .menu li {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-
-  .text h1 {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
-
-
-  .btn {
-    padding: 10px 24px;
-    font-size: 16px;
-  }
-
-  .slide-in,
-  .slide-on {
-    padding: 12px 20px;
-    font-size: 14px;
-  }
-
-  .button {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .slide-in,
-  .slide-on {
-    width: 80%;
-    padding: 12px 0;
-  }
+  }}
+ 
+  @media (max-width: 768px) {
 
   /* 섹션1 */
   #section1 .text h1 {
@@ -146,8 +66,7 @@
   #section2 {
     width: 100%;
     height: auto;
-    padding-bottom: 80px;
-    /* 하단 살짝 여백 */
+    padding-bottom: 30px;
     padding-top: 40px;
   }
 
@@ -235,9 +154,9 @@
       gap: 20px;
     }
 
-    #section4 .column:nth-child(2) {
+    /* #section4 .column:nth-child(2) {
       margin-top: 40px;
-    }
+    } */
   
 
     #section4 .column .text {
@@ -250,7 +169,8 @@
       width: 100%;
       height: auto;
     }
-    #section4 .column img:nth-child(2){margin-top:-110px;}
+   
+    #section4 .column img:nth-child(2){margin-top:-90px;}
     #section4 .column img:nth-child(1){margin-top:50px;}
 
     #section4 .column .text h3 {
