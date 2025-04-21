@@ -1,108 +1,4 @@
 @charset "utf-8";
-
-/* 기본 */
-.main-header {
-    font-family: 'Noto Sans KR', sans-serif;
-    border-bottom: 1px solid #e5e5e5;
-  }
-  
-  .header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .logo a {
-    font-size: 24px;
-    font-weight: bold;
-    color: #FF6B00;
-    text-decoration: none;
-  }
-  
-  .gnb {width:800px; height:40px; }
-
-  .gnb>li {float:left; width:20%; line-height:40px; text-align:center;
-  z-index: 5; position:relative;}
-
-  .mgnb>li:hover {background-color:#000000;}
-
-  .mgnb>li:hover a {color:#333;}
-
-  .gnb>li>a {color:#000000;}
-
-  .sub {background-color:#ddd; display:none;}
-
-  .sub>li:hover {background-color:gold;}
-
-  /* ////========================== */
-  .search-box {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-box input {
-    padding: 8px 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-  }
-  
-  .search-box button {
-    padding: 8px 12px;
-    background: #FF6B00;
-    color: white;
-    border: none;
-    border-radius: 0 4px 4px 0;
-  }
-  
-  .mobile-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  /* 하단 메뉴 */
-  /* .header-bottom {
-    background:  #FF6B00;
-  } */
-  
-  /* .sub-menu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px 0;
-    list-style: none;
-    margin: 0;
-  }
-   */
-  /* .sub-menu li a {
-    padding: 24px 32px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-  } */
-  
-  /* .sub-menu li a:hover {
-    background-color: #FF6B00;
-    border-radius: 5px;
-  } */
-
-  .header-bottom .menu {width:100%; }
-
-  .header-bottom .menu>li {float:left; width:20%; line-height:40px; text-align:center; background-color:black;}
-
-  .header-bottom .menu>li:hover {background-color:#fff;}
-
-  .header-bottom .menu>li:hover a {color:#333;}
-
-  .header-bottom .menu>li>a {color:#fff;}
-
-  .header-bottom .sub {background-color:#ddd; display:none;}
-
-  .header-bottom .sub>li:hover {background-color:gold;}
-
-
 /* section1  */
 #section1 {
   width: 100%;
@@ -244,8 +140,29 @@
   justify-content: center;
   font-size:24px;
 }
+#section3 {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
 
-/*section*/
+#section3::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 어두운 투명 레이어 */
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#section3 > * {
+  position: relative;
+  z-index: 2; /* 콘텐츠는 위에 오게 */
+}
+
+/*section4*/
 #section4 {
   padding: 60px 20px;
   background-color: #fffaf5;
@@ -331,8 +248,8 @@
 }
 
 .swiper-slide {
-  width: 670px !important;
-  height: 400px;
+  /* width: 670px !important; */
+  /* height: 400px; */
   background: #fff;
   border-radius: 20px;
   padding: 100px;

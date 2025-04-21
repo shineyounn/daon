@@ -12,9 +12,10 @@
 
   <!-- 반응형 -->
   <link rel="stylesheet" href="./css/ban_common.css">
-  <link rel="stylesheet" href="./css/ban_main_1153.css">
+  <link rel="stylesheet" href="./css/ban_main_1153.css"> 
+   <link rel="stylesheet" href="./css/ban_main_992.css">
   <link rel="stylesheet" href="./css/ban_main_768.css">
-  <link rel="stylesheet" href="./css/ban_main_992.css">
+
 
 </head>
 
@@ -22,11 +23,29 @@
 
   <header class="main-header">
     <div class="header-top">
-      <div class="logo"><a href="/">다온숲 한의원</a></div>
+      <div class="logo"><a href="./index.html">다온숲 </a></div>
 
       <ul class="gnb">
 
-        <li><a href="#">Menu1</a>
+        <li><a href="./sub.html">센터소개</a>
+          <ul class="sub">
+            <li><a href="#">다온숲이란?</a></li>
+            <li><a href="#">다온숲 소개</a></li>
+            <li><a href="#">오시는 길</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">주요사업</a>
+          <ul class="sub">
+            <li><a href="#">정신과 상담</a></li>
+            <li><a href="#">여성 건강</a></li>
+            <li><a href="#">자가돌봄 프로그램</a></li>
+            <li><a href="#">치유 공간</a></li>
+            <li><a href="#">중식 제공</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">신청하기</a>
           <ul class="sub">
             <li><a href="#">SUB1</a></li>
             <li><a href="#">SUB2</a></li>
@@ -34,48 +53,32 @@
           </ul>
         </li>
 
-        <li><a href="#">Menu2</a>
+        <li><a href="#">센터소식</a>
           <ul class="sub">
-            <li><a href="#">SUB1</a></li>
-            <li><a href="#">SUB2</a></li>
-            <li><a href="#">SUB3</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">활동소식</a></li>
+            <li><a href="#">활동기록</a></li>
           </ul>
         </li>
 
-        <li><a href="#">Menu3</a>
+        <li><a href="#">프로그램</a>
           <ul class="sub">
-            <li><a href="#">SUB1</a></li>
-            <li><a href="#">SUB2</a></li>
-            <li><a href="#">SUB3</a></li>
-          </ul>
-        </li>
-
-        <li><a href="#">Menu4</a>
-          <ul class="sub">
-            <li><a href="#">SUB1</a></li>
-            <li><a href="#">SUB2</a></li>
-            <li><a href="#">SUB3</a></li>
-          </ul>
-        </li>
-
-        <li><a href="#">Menu4</a>
-          <ul class="sub">
-            <li><a href="#">SUB1</a></li>
-            <li><a href="#">SUB2</a></li>
-            <li><a href="#">SUB3</a></li>
+            <li><a href="#">꽃꽃이프로그램</a></li>
+            <li><a href="#">체조프로그램</a></li>
+            <li><a href="#">요리프로그램</a></li>
           </ul>
         </li>
 
       </ul>
 
 
-      <div class="search-box">
-        <input type="text" placeholder="검색어를 입력하세요" />
-        <button><span>🔍</span></button>
+      <!-- <div class="search-box">
+       <input type="text" placeholder="검색어를 입력하세요" /> -->
+        <!-- <button><span>🔍</span></button> -->
       </div>
 
       <div class="mobile-toggle">&#9776;</div>
-    </div>
+    </div> 
 
   </header>
 
@@ -252,7 +255,6 @@
   </section>
 
 
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/swiper.js"></script>
 
@@ -269,22 +271,22 @@
       const toggleBtn = document.querySelector('.mobile-toggle');
       const gnb = document.querySelector('.gnb');
       const overlay = document.querySelector('.menu-overlay');
-  
+
       // 메뉴
       toggleBtn.addEventListener('click', function () {
         gnb.classList.toggle('active');
         // overlay.classList.toggle('active');
         document.body.style.overflow = gnb.classList.contains('active') ? 'hidden' : '';
       });
-  
+
       // overlay.addEventListener('click', function () {
       //   gnb.classList.remove('active');
       //   overlay.classList.remove('active');
       //   document.body.style.overflow = '';
       // });
-  
+
       // PC는 hover / 모바일은 click
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 857) {
         $('.gnb>li').hover(function () {
           $(this).find('.sub').stop().slideDown();
         }, function () {
@@ -300,26 +302,26 @@
     });
   </script>
 
-<script>
-  // 모바일 햄버거 메뉴 열기
-  document.querySelector('.mobile-toggle').addEventListener('click', function () {
-    document.querySelector('.gnb').classList.toggle('active');
-  });
-
-  // 서브메뉴 토글
-  const gnbItems = document.querySelectorAll('.gnb > li > a');
-
-  gnbItems.forEach(function (item) {
-    item.addEventListener('click', function (e) {
-      const subMenu = this.nextElementSibling;
-
-      if (subMenu && subMenu.classList.contains('sub')) {
-        e.preventDefault(); // 링크 기본 동작 방지
-        subMenu.classList.toggle('active');
-      }
+  <script>
+    // 모바일 햄버거 메뉴 열기
+    document.querySelector('.mobile-toggle').addEventListener('click', function () {
+      document.querySelector('.gnb').classList.toggle('active');
     });
-  });
-</script>
+
+    // 서브메뉴 토글
+    const gnbItems = document.querySelectorAll('.gnb > li > a');
+
+    gnbItems.forEach(function (item) {
+      item.addEventListener('click', function (e) {
+        const subMenu = this.nextElementSibling;
+
+        if (subMenu && subMenu.classList.contains('sub')) {
+          e.preventDefault(); // 링크 기본 동작 방지
+          subMenu.classList.toggle('active');
+        }
+      });
+    });
+  </script>
 
 
 </body>

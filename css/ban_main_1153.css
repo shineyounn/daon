@@ -7,17 +7,6 @@
 
 @media screen and (max-width: 1153px) {
 
-  header {
-    height: auto;
-    padding: 20px 40px;
-    flex-direction: column;
-  }
-
-  .menu {
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
 /* 섹션1 */
   .text h1 {
     font-size: 36px;
@@ -146,7 +135,7 @@
   }
 
   .swiper-slide {
-    width: 90%;
+    /* width: 90%; */
     padding: 60px 40px;
   }
 

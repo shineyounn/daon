@@ -62,6 +62,78 @@ button:focus {
     justify-content: center;
 }
 
+
+/* /////기본////// */
+/* 헤더 */
+/* 기본 스타일 */
+/* 기본 */
+.main-header {
+  font-family: 'Noto Sans KR', sans-serif;
+  border-bottom: 1px solid #e5e5e5;
+
+  position: fixed;           /* 고정 위치 설정 */
+  top: 0;                    /* 화면 상단에 붙이기 */
+  left: 0;
+  width: 100%;               /* 전체 너비 사용 */
+  background-color: #fff;    /* 배경색 지정 (투명하면 내용 겹쳐보임 주의) */
+  z-index: 1000;             /* 다른 요소보다 위로 오도록 설정 */
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap; 
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FF6B00;
+  text-decoration: none;
+}
+
+.gnb {  display: flex; width:600px; height:40px; }
+
+.gnb>li {float:left; width:20%; line-height:40px; text-align:center;
+z-index: 5; position:relative;}
+
+.gnb>li:hover a {color:#ff8000}
+
+.gnb>li>a {color:#000000;}
+
+.sub {background-color:#fff; display:none; color:#000000; padding:40, 40, 40; border-radius: 10px;}
+.sub > li>a {color:#000000; }
+.sub>li:hover>a {font-size:16px; color:#ff8000 }
+/* .sub>li:hover {font-size:12px;  border-radius: 10px; background-color:gold;} */
+
+/* ////========================== */
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-box button {
+  padding: 8px 12px;
+  background: #FF6B00;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.mobile-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
     .container {
         padding: 0 40px;
@@ -83,7 +155,7 @@ button:focus {
 @media (max-width: 992px) {
     .menu li {
         padding: 12px 24px;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     #section2 .card-grid {
@@ -116,28 +188,168 @@ button:focus {
     }
 }
 
-@media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .button {
-        gap: 40px;
-    }
-
-    #section6 h3 {
-        font-size: 24px;
-        line-height: 40px;
-    }
-
-    #section6 .btn {
-        padding: 12px 28px;
-    }
+@media (max-width: 857px) {
+  .menu {
+    flex-direction: column;
+    gap: 20px;
 }
 
-@media (max-width: 768px) {
+.button {
+    gap: 40px;
+}
+.sub {background-color:#fff; display:none;color:#000000;border-radius: 10px;}
 
+#section6 h3 {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+#section6 .btn {
+    padding: 12px 28px;
+}
+  /* gnb 사이드 메뉴 */
+  .gnb {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .gnb.active {
+    right: 0;  display: flex; width: 250px;
+  }
+
+  .gnb > li {
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+  }
+  .gnb>li {float:left; width:100%; line-height:30px; text-align:center; 
+    z-index: 5; position:relative;}
+
+  .gnb > li > a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    text-align:left;
+  }
+
+  .sub {
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-align:left;
+  }
+  .sub > li{
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-align:left;
+    padding-left:30px;
+  }
+  
+
+  /* 모바일 토글 버튼 */
+  .mobile-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+    color: #333;
+  }
+
+
+/* 기본 햄버거 숨김 */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #FF6B00;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* 모바일 메뉴 위치 조정 */
+.hamburger {
+  display: block;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  padding: 20px 0;
+
+  position: fixed;
+  top: 169px;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+
+.header-inner {
+  position: relative;
+}
+
+
+.text h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+
+.btn {
+  padding: 10px 24px;
+  font-size: 16px;
+}
+
+.slide-in,
+.slide-on {
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.button {
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+}
+
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button {
+    gap: 40px;
+}
+
+#section6 h3 {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+#section6 .btn {
+    padding: 12px 28px;
+}
   /* gnb 사이드 메뉴 */
   .gnb {
     display: flex;
@@ -286,94 +498,6 @@ button:focus {
     }
 }
 
-
-@media screen and (max-width: 768px) {
-    .logo img {
-      width: 80px;
-    }
-  
-    /* 기본 햄버거 숨김 */
-    .hamburger {
-      display: none;
-      font-size: 28px;
-      background: none;
-      border: none;
-      color: #FF6B00;
-      cursor: pointer;
-      margin-left: auto;
-    }
-  
-    /* 모바일 메뉴 위치 조정 */
-    .hamburger {
-      display: block;
-    }
-  
-    .menu {
-      display: none;
-      flex-direction: column;
-      gap: 15px;
-      background-color: white;
-      padding: 20px 0;
-  
-      position: fixed;
-      top: 169px;
-      left: 0;
-      width: 100vw;
-      z-index: 1000;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      text-align: center;
-    }
-  
-  
-    .menu.active {
-      display: flex;
-    }
-  
-    .header-inner {
-      position: relative;
-    }
-  
-    .menu {
-      flex-direction: column;
-      align-items: center;
-      display: none;
-      /* 임시로 숨김 */
-    }
-  
-    .menu li {
-      padding: 8px 16px;
-      font-size: 14px;
-    }
-  
-    .text h1 {
-      font-size: 28px;
-      margin-bottom: 30px;
-    }
-  
-  
-    .btn {
-      padding: 10px 24px;
-      font-size: 16px;
-    }
-  
-    .slide-in,
-    .slide-on {
-      padding: 12px 20px;
-      font-size: 14px;
-    }
-  
-    .button {
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-    }
-  
-    .slide-in,
-    .slide-on {
-      width: 80%;
-      padding: 12px 0;
-    }}
-
     @media screen and (max-width: 992px) {
         .logo img {
           width: 80px;
@@ -463,17 +587,6 @@ button:focus {
 
         @media screen and (max-width: 1153px) {
 
-            header {
-              height: auto;
-              padding: 20px 40px;
-              flex-direction: column;
-            }
-          
-            .menu {
-              flex-wrap: wrap;
-              gap: 20px;
-              justify-content: center;
-            }
           /* 섹션1 */
             .text h1 {
               font-size: 36px;
