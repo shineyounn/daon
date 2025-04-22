@@ -14,6 +14,15 @@
   <link rel="stylesheet" href="./css/ban_sub_768.css">
 
 
+  <!-- JS -->
+
+  <!-- jQuery 먼저 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Swiper 관련 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
+
 </head>
 
 <body>
@@ -127,7 +136,7 @@
   <!-- 섹션4 -->
   <section id="section4">
     <div class="container">
-  
+
       <div class="content">
         <div class="writing">
           <h3>정확한 진단과 깊은 이청소년의 건강과
@@ -212,74 +221,10 @@
     </div>
   </section>
 
+  <!-- 사용자 스크립트 -->
+  <script src="./js/menu-toggle.js"></script>
+  <script src="./js/submenu.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./js/swiper.js"></script>
-
-  <script>
-    document.querySelector('.mobile-toggle').addEventListener('click', function () {
-      document.querySelector('.gnb').classList.toggle('active');
-    });
-  </script>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const toggleBtn = document.querySelector('.mobile-toggle');
-      const gnb = document.querySelector('.gnb');
-      const overlay = document.querySelector('.menu-overlay');
-
-      // 메뉴
-      toggleBtn.addEventListener('click', function () {
-        gnb.classList.toggle('active');
-        // overlay.classList.toggle('active');
-        document.body.style.overflow = gnb.classList.contains('active') ? 'hidden' : '';
-      });
-
-      // overlay.addEventListener('click', function () {
-      //   gnb.classList.remove('active');
-      //   overlay.classList.remove('active');
-      //   document.body.style.overflow = '';
-      // });
-
-      // PC는 hover / 모바일은 click
-      if (window.innerWidth > 857) {
-        $('.gnb>li').hover(function () {
-          $(this).find('.sub').stop().slideDown();
-        }, function () {
-          $(this).find('.sub').stop().slideUp();
-        });
-      } else {
-        // ======모바일에서 메뉴 클릭서브메뉴=========
-        $('.gnb > li > a').on('click', function (e) {
-          e.preventDefault();
-          $(this).siblings('.sub').stop().slideToggle();
-        });
-      }
-    });
-  </script>
-
-  <script>
-    // 모바일 햄버거 메뉴 열기
-    document.querySelector('.mobile-toggle').addEventListener('click', function () {
-      document.querySelector('.gnb').classList.toggle('active');
-    });
-
-    // 서브메뉴 토글
-    const gnbItems = document.querySelectorAll('.gnb > li > a');
-
-    gnbItems.forEach(function (item) {
-      item.addEventListener('click', function (e) {
-        const subMenu = this.nextElementSibling;
-
-        if (subMenu && subMenu.classList.contains('sub')) {
-          e.preventDefault(); // 링크 기본 동작 방지
-          subMenu.classList.toggle('active');
-        }
-      });
-    });
-  </script>
 
 </body>
 

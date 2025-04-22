@@ -12,10 +12,19 @@
 
   <!-- 반응형 -->
   <link rel="stylesheet" href="./css/ban_common.css">
-  <link rel="stylesheet" href="./css/ban_main_1153.css"> 
-   <link rel="stylesheet" href="./css/ban_main_992.css">
+  <link rel="stylesheet" href="./css/ban_main_1153.css">
+  <link rel="stylesheet" href="./css/ban_main_992.css">
   <link rel="stylesheet" href="./css/ban_main_768.css">
 
+
+  <!-- JS -->
+
+  <!-- jQuery 먼저 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Swiper 관련 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
 
 </head>
 
@@ -46,11 +55,6 @@
         </li>
 
         <li><a href="#">신청하기</a>
-          <ul class="sub">
-            <li><a href="#">SUB1</a></li>
-            <li><a href="#">SUB2</a></li>
-            <li><a href="#">SUB3</a></li>
-          </ul>
         </li>
 
         <li><a href="#">센터소식</a>
@@ -74,11 +78,11 @@
 
       <!-- <div class="search-box">
        <input type="text" placeholder="검색어를 입력하세요" /> -->
-        <!-- <button><span>🔍</span></button> -->
-      </div>
+      <!-- <button><span>🔍</span></button> -->
+    </div>
 
-      <div class="mobile-toggle">&#9776;</div>
-    </div> 
+    <div class="mobile-toggle">&#9776;</div>
+    </div>
 
   </header>
 
@@ -164,31 +168,31 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="slide-img"></div>
+          <div class="slide-img"><img src="./img/free_medical_care.png" alt="free_medical_care"></div>
           <div class="slide-title">무료 진료</div>
           <div class="slide-desc">청소년 여성 건강 전반을 다루는 진료 </div>
           <a href="#" class="slide-link">자세히 보기 →</a>
         </div>
         <div class="swiper-slide">
-          <div class="slide-img"></div>
+          <div class="slide-img"><img src="./img/psychotherapy.png" alt="psychotherapy"></div>
           <div class="slide-title">심리치료</div>
           <div class="slide-desc">1:1 심리상담 / 집단상담 / 심리검사 </div>
           <a href="#" class="slide-link">자세히 보기 →</a>
         </div>
         <div class="swiper-slide">
-          <div class="slide-img"></div>
+          <div class="slide-img"><img src="./img/program.png" alt="program"></div>
           <div class="slide-title">프로그램</div>
           <div class="slide-desc"> 정기 프로그램 운영 (청소년 참여형 전시회, 성교육 등)</div>
           <a href="#" class="slide-link">자세히 보기 →</a>
         </div>
         <div class="swiper-slide">
-          <div class="slide-img"></div>
+          <div class="slide-img"><img src="./img/Health_supplies_support.png" alt="Health_supplies_support"></div>
           <div class="slide-title">건강물품지원</div>
           <div class="slide-desc">생필품을 지원하여 안정적으로 치료받을 수 있는 환경을 제공</div>
           <a href="#" class="slide-link">자세히 보기 →</a>
         </div>
         <div class="swiper-slide">
-          <div class="slide-img"></div>
+          <div class="slide-img"><img src="./img/Lunch_provided.png" alt="Lunch_provided"></div>
           <div class="slide-title">중식제공</div>
           <div class="slide-desc">다온숲 진료를 받으로 오는 이들에게 중식을 제공</div>
           <a href="#" class="slide-link">자세히 보기 →</a>
@@ -254,75 +258,9 @@
     </div>
   </section>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./js/swiper.js"></script>
-
-  <script>
-    document.querySelector('.mobile-toggle').addEventListener('click', function () {
-      document.querySelector('.gnb').classList.toggle('active');
-    });
-  </script>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const toggleBtn = document.querySelector('.mobile-toggle');
-      const gnb = document.querySelector('.gnb');
-      const overlay = document.querySelector('.menu-overlay');
-
-      // 메뉴
-      toggleBtn.addEventListener('click', function () {
-        gnb.classList.toggle('active');
-        // overlay.classList.toggle('active');
-        document.body.style.overflow = gnb.classList.contains('active') ? 'hidden' : '';
-      });
-
-      // overlay.addEventListener('click', function () {
-      //   gnb.classList.remove('active');
-      //   overlay.classList.remove('active');
-      //   document.body.style.overflow = '';
-      // });
-
-      // PC는 hover / 모바일은 click
-      if (window.innerWidth > 857) {
-        $('.gnb>li').hover(function () {
-          $(this).find('.sub').stop().slideDown();
-        }, function () {
-          $(this).find('.sub').stop().slideUp();
-        });
-      } else {
-        // ======모바일에서 메뉴 클릭서브메뉴=========
-        $('.gnb > li > a').on('click', function (e) {
-          e.preventDefault();
-          $(this).siblings('.sub').stop().slideToggle();
-        });
-      }
-    });
-  </script>
-
-  <script>
-    // 모바일 햄버거 메뉴 열기
-    document.querySelector('.mobile-toggle').addEventListener('click', function () {
-      document.querySelector('.gnb').classList.toggle('active');
-    });
-
-    // 서브메뉴 토글
-    const gnbItems = document.querySelectorAll('.gnb > li > a');
-
-    gnbItems.forEach(function (item) {
-      item.addEventListener('click', function (e) {
-        const subMenu = this.nextElementSibling;
-
-        if (subMenu && subMenu.classList.contains('sub')) {
-          e.preventDefault(); // 링크 기본 동작 방지
-          subMenu.classList.toggle('active');
-        }
-      });
-    });
-  </script>
-
+  <!-- 사용자 스크립트 -->
+  <script src="./js/menu-toggle.js"></script>
+  <script src="./js/submenu.js"></script>
 
 </body>
 
