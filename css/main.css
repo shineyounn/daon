@@ -116,7 +116,13 @@
   border-radius: 16px;
   margin-top: 64px;
   box-shadow: 5px 5px 10px 0px rgb(203, 197, 187);
+  display: flex;
+flex-direction: column;
+justify-content: space-evenly;
 }
+.card img{width:100%;}
+.card h4{color: #3a1e00;}
+
 
 .card:nth-child(1),
 .card:nth-child(3) {
