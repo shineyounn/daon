@@ -8,11 +8,11 @@
 /* section1  */
 #section1 {
     width: 100%;
-    height: 600px;
+    height: auto;
     display: flex;
 }
 
-#section1 h3{font-size:24px;margin-top:60px;text-align: center;}
+#section1 h3{margin-top:138px; font-size:24px;text-align: center;}
 
 #section1 .container img {
     width: 100%;
@@ -23,7 +23,7 @@
 
 #section2 {
     width: 100%;
-    height: 230px;
+    height: 248px;
     background-color: #fff;
   }
   
@@ -36,12 +36,12 @@
   }
   
   #section2 .title {
-    margin-bottom: 10px;
+    margin-bottom: 24px;
   }
   
   #section2 .title h2 {
     font-size: 16px;
-    color: #5FA377;
+    color:#FF6B00;
     margin: 0;
   }
   #section2 .writing {width:100%;}
@@ -90,7 +90,7 @@
 #section3 .highlight img {
     width: 100%;
     height: 100%;
-    display: none;
+   
 }
 
 #section3 .writing {
@@ -101,11 +101,13 @@
 #section3 h3 {
     font-size: 24px;
     margin-top: 13%;
+    color:#222;
 }
 
 #section3 p {
     font-size: 16px;
     margin-top: 20px;
+    color: #555;
 }
 
 
@@ -139,16 +141,16 @@
 
 #section4 .highlight {
     width: 50%; margin-left: 10px;
-    height: 80%; background-color: #1c0f01;
+    height: 80%;
 }
 
 #section4 .highlight img {
     width: 100%;
     height: 100%;
-    display:none;
 }
 
 #section4 h3 {
+    color:#222;
     font-size: 24px;
     margin-top: 20%;
 }
@@ -156,6 +158,7 @@
 #section4 p {
     font-size: 16px;
     margin-top: 20px;
+    color: #555;
 }
 
 
@@ -181,7 +184,7 @@
 
 #section6 {
     width: 100%;
-    height: 200px;
+    height: 250px;
     background-color: #fff;
   }
   
@@ -200,24 +203,17 @@
   
   #section6 .title h2 {
     font-size: 16px;
-    color: #5FA377;
+    color: #FF6B00;
     margin: 0;
     margin-top:40px
   }
   #section6 .writing {width:100%;}
-  #section6 .writing h3 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #222;
-    margin: 0 0 16px 0;
-    line-height: 1.4; display: none;
-  }
   
-  #section6 .writing p {
+  #section6 .writing {
     font-size: 16px;
     color: #555;
     line-height: 1.6;
-    margin-top:20px
+    margin-top:-24px;
   }
 
 

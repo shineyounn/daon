@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
   } else {
     // 모바일 메뉴: click
     $('.gnb > li > a').on('click', function (e) {
-      e.preventDefault();
       $(this).siblings('.sub').stop().slideToggle();
     });
   }

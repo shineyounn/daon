@@ -99,11 +99,13 @@ button:focus {
 .gnb>li {float:left; width:20%; line-height:40px; text-align:center;
 z-index: 5; position:relative;}
 
-.gnb>li:hover a {color:#ff8000}
-
 .gnb>li>a {color:#000000;}
 
-.sub {background-color:#fff; display:none; color:#000000; padding:40, 40, 40; border-radius: 10px;}
+.gnb > li:hover > a {
+  color: #FF6B00;
+}
+
+.sub {background-color:#fff; display:none; color:#000000;margin-left: -20px;margin-right: -20px;   border: 2px solid #ff8000; /* 보더 색상 */ border-radius: 8px;  padding: 10px;}
 .sub > li>a {color:#000000; }
 .sub>li:hover>a {font-size:16px; color:#ff8000 }
 /* .sub>li:hover {font-size:12px;  border-radius: 10px; background-color:gold;} */
@@ -115,7 +117,7 @@ z-index: 5; position:relative;}
 }
 
 .search-box input {
-  padding: 8px 10px;
+  padding: 10px 10px;
   border: 1px solid #ccc;
   border-radius: 4px 0 0 4px;
 }

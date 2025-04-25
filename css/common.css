@@ -12,7 +12,7 @@ ul, ol, li {
 
 a {
     text-decoration: none;
-    color: #ff8000;
+    /* color: #ff8000; */
     font-size: 16px;
     font-weight: 500;
 }
@@ -42,6 +42,12 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 5px 5px 10px 0px rgb(89, 84, 75, 0.8);
+}
+
+.gnb li a:focus,
+.gnb li a:active {
+  outline: none;
+  border: none;
 }
 
 .btn:hover {
