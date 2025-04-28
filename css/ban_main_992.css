@@ -85,7 +85,7 @@
   
     .slide-in,
     .slide-on {
-      width: 80%;
+      width: 50%;
       padding: 12px 0;
     }
   
@@ -123,24 +123,7 @@
       margin-top: 32px !important;
     }
   
-    /* 참고 */
-    /* .card {
-      width: 80%;
-      min-height: 200px;
-      background-color: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-    .card img{width:40%;}
-    .button {
-      margin-top: 30px;
-    } */
+
   
   
     #section2 {
@@ -156,31 +139,22 @@
       line-height: 1.6;
     }
   
-    /* .card-grid {
+    .card-grid {
       flex-direction: column;
       align-items: center;
       gap: 20px;
-    } */
+      width:100%;
+    }
+    .card-grid h4{
+     padding-bottom: 16px;
+    }
   
-    /* .card {
-      width: 90%;
-    } */
-    /* .card-grid {
+    .card {
+      width: 50%;
       display: flex;
-      justify-content: space-between;
-      margin-top: 0px;
-      padding-bottom: 140px;
-    } */
-    
-    /* .card {
-      width: 25%;
-      height: 300px;
-      background: #fff;
-      border-radius: 16px;
-      margin-top: 40px;
-  
-    } */
-
+      justify-content: center;
+    }
+   
     /* 섹션3 */
     #section4 h3 {
       font-size: 28px;
@@ -224,7 +198,7 @@
       flex: 1;
       max-width: 100%;
       height: auto;
-      border-radius: 16px;
+      /* border-radius: 16px; */
     }
   
     #section4 .column .text h3 {
@@ -309,7 +283,7 @@
     .swiper-slide {
       padding: 20px;
       box-sizing: border-box;
-      border-radius: 16px;
+      /* border-radius: 16px; */
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       background: #fff;
       margin-bottom: 40px;

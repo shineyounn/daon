@@ -35,15 +35,17 @@
 #section2 .title {
     width: 345px;
     height: auto;
-    /* background-color: #777; */
 }
 
 #section2 .writing {
     width: 1048px;
-    height: auto;
-    /* background-color: #c66f6f; */
+    height: auto; 
 }
-
+#section2 .writing p{
+    width: 1048px;
+    height: auto; 
+    color: #555;
+}
 
 
 
@@ -51,7 +53,6 @@
 #section3 {
     width: 100%;
     height: 636px;
-    /* background-color: antiquewhite; */
 }
 
 #section3 .container {
@@ -70,13 +71,12 @@
 #section3 .writing{width:532px; margin-left: 107px;}
 
 #section3 h3{font-size: 32px;margin-top:115px;}
-#section3 p{font-size: 24px; margin-top: 40px;}
+#section3 p{font-size: 24px; margin-top: 40px;     color: #555;}
 
 /* section4  */
 #section4 {
     width: 100%;
     height: 636px;
-    /* background-color: antiquewhite; */
 }
 
 #section4 .container {
@@ -100,7 +100,7 @@
 }
 
 #section4 h3{font-size: 32px;margin-top:115px;}
-#section4 p{font-size: 24px; margin-top: 40px;}
+#section4 p{font-size: 24px; margin-top: 40px;     color: #555;}
 
 
 
@@ -108,8 +108,7 @@
 /* section5  */
 #section5 {
     width: 100%;
-    height: 516px;
-    /* background-color: antiquewhite; */
+    height: 516px
 }
 
 
@@ -125,7 +124,6 @@
 #section6 {
     width: 100%;
     height: 440px;
-    /* background-color: #FF6B00; */
     display: flex;
 }
 
@@ -146,6 +144,7 @@
 #section6 .writing {
     width: 1048px;
     height: auto;  line-height: 1.6;
+    color: #555;
 }
 
 
