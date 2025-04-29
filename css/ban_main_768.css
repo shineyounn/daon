@@ -208,7 +208,7 @@
   .swiper-slide {
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); */
     background: #fff;
     margin-bottom: 40px;
     /* 반응형에서 아래 카드와 간격 확보 */
